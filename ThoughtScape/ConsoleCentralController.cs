@@ -10,8 +10,11 @@ namespace ThoughtScape
         {
             while (this.ShouldContinue())
             {
+                CentralController.Logger.TraceInformation("Offering Menu");
                 Console.WriteLine("WHAT WOULD YOU LIKE TO DO?\n\t1. CREATE A NEW NOTE\n\t2. QUIT");
                 string InputOption = Console.ReadLine();
+                CentralController.Logger.TraceInformation("\tOption chosen: {0}", InputOption);
+
                 if ("1".Equals(InputOption)) {
                     Console.WriteLine("UNFORTUNATELY, THAT OPTION IS NOT YET IMPLEMENTED.");
                 }
